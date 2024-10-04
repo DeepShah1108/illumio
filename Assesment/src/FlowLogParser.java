@@ -4,9 +4,9 @@ import java.util.*;
 public class FlowLogParser {
     // Main method
     public static void main(String[] args) {
-        String flowLogFile = "Assesment/src/resources/flow_logs.txt";  // Input flow logs file
-        String lookupFile = "Assesment/src/resources/lookup_table.csv";  // Lookup table csv file
-        String outputFile = "Assesment/src/resources/output.txt";  // Output results file
+        String flowLogFile = "resources/flow_logs.txt";  // Input flow logs file
+        String lookupFile = "resources/lookup_table.csv";  // Lookup table csv file
+        String outputFile = "resources/output.txt";  // Output results file
 
         try {
             // Load the lookup table
