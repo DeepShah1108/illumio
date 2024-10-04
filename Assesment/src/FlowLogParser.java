@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class FlowLogParser {
-    // Main method
+
     public static void main(String[] args) {
-        String flowLogFile = "resources/flow_logs.txt";  // Input flow logs file
-        String lookupFile = "resources/lookup_table.csv";  // Lookup table csv file
-        String outputFile = "resources/output.txt";  // Output results file
+        String flowLogFile = "resources/flow_logs.txt";
+        String lookupFile = "resources/lookup_table.csv";
+        String outputFile = "resources/output.txt";
 
         try {
             // Load the lookup table
@@ -106,7 +106,7 @@ public class FlowLogParser {
         while ((line = reader.readLine()) != null) {
             String[] parts = line.split(",");
             String dstPort = parts[0].trim();
-            String protocol = parts[1].trim().toLowerCase(); // Lowercase for case-insensitive matching
+            String protocol = parts[1].trim().toLowerCase();
             String tag = parts[2].trim();
             lookupTable.put(dstPort + "_" + protocol, tag);
         }
